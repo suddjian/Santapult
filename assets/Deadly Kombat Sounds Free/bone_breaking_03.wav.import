@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://buwnfli1a56nk"
+path="res://.godot/imported/bone_breaking_03.wav-ad66fb402feddfcb2020a499bf787c07.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/bone_breaking_03.wav"
+dest_files=["res://.godot/imported/bone_breaking_03.wav-ad66fb402feddfcb2020a499bf787c07.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dp8qfwjfi3ely"
+path="res://.godot/imported/fire_punch_02.wav-75570d68c0b1b40a172934f8699f080d.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/fire_punch_02.wav"
+dest_files=["res://.godot/imported/fire_punch_02.wav-75570d68c0b1b40a172934f8699f080d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

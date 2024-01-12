@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://c6s7w1ydn0sxm"]
+
+[ext_resource type="Script" path="res://scripts/Weapon.gd" id="1_hijw0"]
+[ext_resource type="AudioStream" uid="uid://hs8a6va5r21o" path="res://assets/assorted sounds/pistol-168180.mp3" id="2_n480g"]
+
+[resource]
+script = ExtResource("1_hijw0")
+max_ammo = 5
+current_ammo = 5
+power = 40.0
+sound = ExtResource("2_n480g")

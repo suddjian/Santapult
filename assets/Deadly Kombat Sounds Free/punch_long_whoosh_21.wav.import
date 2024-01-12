@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d4ntjnd85frk0"
+path="res://.godot/imported/punch_long_whoosh_21.wav-54cea601f9f1df86dbe813f17e5490ae.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/punch_long_whoosh_21.wav"
+dest_files=["res://.godot/imported/punch_long_whoosh_21.wav-54cea601f9f1df86dbe813f17e5490ae.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

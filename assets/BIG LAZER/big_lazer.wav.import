@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtthwy8j4q82f"
+path="res://.godot/imported/big_lazer.wav-aa4b3ee6289ba8253405acf23b08578c.sample"
+
+[deps]
+
+source_file="res://assets/BIG LAZER/big_lazer.wav"
+dest_files=["res://.godot/imported/big_lazer.wav-aa4b3ee6289ba8253405acf23b08578c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

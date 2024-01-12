@@ -1,0 +1,216 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1ntyq36vndr2"]
+
+[ext_resource type="Script" path="res://scripts/title_screen.gd" id="1_c0o4j"]
+[ext_resource type="Theme" uid="uid://4rvhcv1yh0s0" path="res://ui_theme.tres" id="2_h66t6"]
+
+[sub_resource type="Animation" id="Animation_wei3j"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_hrvrl"]
+resource_name = "background_fade"
+length = 60.0
+step = 10.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/BackgroundColor:color:h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.65, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 50)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/BackgroundColor:color:s")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.72, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/BackgroundColor:color:v")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.3, -0.25, 0, 0.25, 0, 0.1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 60)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/BackgroundColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:v")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 5, 0, 1, -10, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 30)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:s")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:h")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(),
+"points": PackedFloat32Array(),
+"times": PackedFloat32Array()
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/VBoxContainer/PressToContinue:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 5, 0, 1, -10, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 40)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3cs46"]
+_data = {
+"RESET": SubResource("Animation_wei3j"),
+"background_fade": SubResource("Animation_hrvrl")
+}
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_c0o4j")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "background_fade"
+libraries = {
+"": SubResource("AnimationLibrary_3cs46")
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BackgroundColor" type="ColorRect" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3, 0.084, 0.084, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.5
+anchor_right = 0.8
+anchor_bottom = 0.5
+offset_left = -50.5
+offset_top = -151.5
+offset_right = 50.5
+offset_bottom = 151.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_h66t6")
+theme_override_constants/separation = 50
+
+[node name="Title" type="RichTextLabel" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][font_size=46][wave amp=60.0 freq=4]Santapult!"
+fit_content = true
+
+[node name="IntroText" type="RichTextLabel" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.905882, 0.807843, 0.537255, 1)
+bbcode_enabled = true
+text = "[p][center]The year is [color=green]2049[/color]. Our world is crumbling into chaos. War and famine consume all. In this time of great desperation, even [color=red]Santa’s reindeer[/color] have gone hungry. They won’t be strong enough to pull his sleigh this year. But the presents must fly!
+[p][center]
+Luckily, the clever elves in [color=green]R&D[/color] have a plan. Reindeer chow may be too expensive, but the price of bullets is at an all-time low. This year, we will shoot [color=red]Santa[/color] into the chimney with [color=slategray][shake level=8]guns[/shake][/color]. The big man is immortal so he’ll be just fine. The marketing department will just need to rebrand his whole vibe a bit, but that’s their problem.
+[p][center]
+It's [color=green]Christmas Eve[/color]. You’re tasked with shooting the jolly old elf into the [color=red]chimney[/color].
+Let’s make those children happy!"
+fit_content = true
+visible_characters_behavior = 1
+
+[node name="PressToContinue" type="RichTextLabel" parent="CanvasLayer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+bbcode_enabled = true
+text = "[center]Press anything to begin."
+fit_content = true
+visible_characters_behavior = 1

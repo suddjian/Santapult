@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clkje2xj4gvfl"
+path="res://.godot/imported/fireball-whoosh-2-179126.mp3-636d32482171948b9ae8c6a8697ea990.mp3str"
+
+[deps]
+
+source_file="res://assets/assorted sounds/fireball-whoosh-2-179126.mp3"
+dest_files=["res://.godot/imported/fireball-whoosh-2-179126.mp3-636d32482171948b9ae8c6a8697ea990.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

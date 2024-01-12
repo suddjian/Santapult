@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b06n5cc1xxnc8"
+path="res://.godot/imported/guts_and_gore_59.wav-684b34329674c7a704a8f5378d35e1f9.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/guts_and_gore_59.wav"
+dest_files=["res://.godot/imported/guts_and_gore_59.wav-684b34329674c7a704a8f5378d35e1f9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

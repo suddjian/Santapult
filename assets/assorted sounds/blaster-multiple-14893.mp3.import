@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cq0jeawu1rr0c"
+path="res://.godot/imported/blaster-multiple-14893.mp3-29eae2f352c716620bcd84bfd6592edc.mp3str"
+
+[deps]
+
+source_file="res://assets/assorted sounds/blaster-multiple-14893.mp3"
+dest_files=["res://.godot/imported/blaster-multiple-14893.mp3-29eae2f352c716620bcd84bfd6592edc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

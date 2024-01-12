@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://4rvhcv1yh0s0"]
+
+[ext_resource type="FontFile" uid="uid://cegkvd7gjmobk" path="res://assets/black_chancery/BLKCHCRY.TTF" id="1_p252t"]
+
+[resource]
+default_font = ExtResource("1_p252t")
+default_font_size = 22
+Fonts/fonts/Title = ExtResource("1_p252t")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bxfvr2n663klr"
+path="res://.godot/imported/body_hit_small_79.wav-cf03693add155ce9e441b3c9a7ab1010.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/body_hit_small_79.wav"
+dest_files=["res://.godot/imported/body_hit_small_79.wav-cf03693add155ce9e441b3c9a7ab1010.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fpnm1irl05gk"
+path="res://.godot/imported/m1-garand-rifle-80192.mp3-d18d4356e86a8d026ee0344a754ff9b7.mp3str"
+
+[deps]
+
+source_file="res://assets/assorted sounds/m1-garand-rifle-80192.mp3"
+dest_files=["res://.godot/imported/m1-garand-rifle-80192.mp3-d18d4356e86a8d026ee0344a754ff9b7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bn2ckg007y2s"
+path="res://.godot/imported/blade_hit_08.wav-00f8ed16f02d472425f35872bc288f26.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/blade_hit_08.wav"
+dest_files=["res://.godot/imported/blade_hit_08.wav-00f8ed16f02d472425f35872bc288f26.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

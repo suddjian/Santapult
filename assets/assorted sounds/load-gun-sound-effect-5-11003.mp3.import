@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cus6qqvfqp6u0"
+path="res://.godot/imported/load-gun-sound-effect-5-11003.mp3-ad10048a442fb7b92e7fb5a7ab13a0de.mp3str"
+
+[deps]
+
+source_file="res://assets/assorted sounds/load-gun-sound-effect-5-11003.mp3"
+dest_files=["res://.godot/imported/load-gun-sound-effect-5-11003.mp3-ad10048a442fb7b92e7fb5a7ab13a0de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
