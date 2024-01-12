@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://dq1m4xjenmq3h"]
+
+[ext_resource type="Texture2D" uid="uid://b3kcc150g15yk" path="res://assets/drawings/shop_mini.png" id="1_6aobv"]
+[ext_resource type="Theme" uid="uid://4rvhcv1yh0s0" path="res://ui_theme.tres" id="2_5oypg"]
+[ext_resource type="Script" path="res://scripts/shop_button.gd" id="3_gn2ex"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_weynv"]
+font_size = 50
+font_color = Color(0.203922, 0.203922, 0.203922, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tcuko"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cyoki"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cenwr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r4osi"]
+
+[node name="ShopMini" type="Sprite2D"]
+texture = ExtResource("1_6aobv")
+
+[node name="ShopLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = -0.3225
+anchor_top = -0.178333
+offset_left = 11.0
+offset_top = 11.0
+offset_right = 85.0
+offset_bottom = 102.0
+theme = ExtResource("2_5oypg")
+text = "GUNS
+GUNS
+GUNS
+"
+label_settings = SubResource("LabelSettings_weynv")
+metadata/_edit_use_anchors_ = true
+
+[node name="ShopButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.175
+anchor_top = -0.28
+anchor_right = 0.38875
+anchor_bottom = 0.235
+offset_left = -177.0
+offset_top = -69.0
+offset_right = -35.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tcuko")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cyoki")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cenwr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r4osi")
+script = ExtResource("3_gn2ex")
+label_color_hover = Color(1, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="ShopButton" to="ShopButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopButton" to="ShopButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopButton" to="ShopButton" method="_on_pressed"]

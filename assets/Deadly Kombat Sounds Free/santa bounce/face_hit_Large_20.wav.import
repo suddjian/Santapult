@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://x8o2aoditdbn"
+path="res://.godot/imported/face_hit_Large_20.wav-bd5453e86923c30d80af55579105f319.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/santa bounce/face_hit_Large_20.wav"
+dest_files=["res://.godot/imported/face_hit_Large_20.wav-bd5453e86923c30d80af55579105f319.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

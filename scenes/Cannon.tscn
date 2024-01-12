@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://xetgxl3byinq"]
+
+[ext_resource type="Script" path="res://scripts/Cannon.gd" id="1_1j733"]
+[ext_resource type="Texture2D" uid="uid://c8wv044y8oicd" path="res://assets/drawings/cannon_body.png" id="1_y2quc"]
+
+[sub_resource type="Curve" id="Curve_8sux7"]
+bake_resolution = 256
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 2.64842, 0.0, 0, 0]
+point_count = 2
+
+[node name="Cannon" type="Sprite2D"]
+texture = ExtResource("1_y2quc")
+script = ExtResource("1_1j733")
+curve = SubResource("Curve_8sux7")
+
+[node name="TempGraphic" type="ColorRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(400, 100)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.129412, 0.129412, 0.129412, 1)

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ce0qtxcwr73n5"
+path="res://.godot/imported/body_hit_finisher_23.wav-c39916dc9d652d3d6e6d9a36d411c309.sample"
+
+[deps]
+
+source_file="res://assets/Deadly Kombat Sounds Free/santa bounce/body_hit_finisher_23.wav"
+dest_files=["res://.godot/imported/body_hit_finisher_23.wav-c39916dc9d652d3d6e6d9a36d411c309.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

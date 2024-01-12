@@ -1,0 +1,215 @@
+[gd_scene load_steps=31 format=3 uid="uid://dx1tnc53ewise"]
+
+[ext_resource type="Script" path="res://scripts/Game.gd" id="1_5ngek"]
+[ext_resource type="Texture2D" uid="uid://cjece03v6q7vt" path="res://assets/Urban-landscape-files/Urban-landscape-files/layers/Sky-layer.png" id="1_r76ha"]
+[ext_resource type="Texture2D" uid="uid://dypsgs2exme7b" path="res://assets/Urban-landscape-files/Urban-landscape-files/layers/buildings-layer.png" id="2_1lsas"]
+[ext_resource type="Resource" uid="uid://c6s7w1ydn0sxm" path="res://resources/pistol.tres" id="2_7ylki"]
+[ext_resource type="Texture2D" uid="uid://cleaxc3u4fjp5" path="res://icon.svg" id="2_pbel4"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="2_u603l"]
+[ext_resource type="AudioStream" uid="uid://hs8a6va5r21o" path="res://assets/assorted sounds/pistol-168180.mp3" id="3_cni2f"]
+[ext_resource type="Script" path="res://scripts/Santa.gd" id="3_taptd"]
+[ext_resource type="AudioStream" uid="uid://de5hyw00oqi2k" path="res://assets/assorted sounds/gun-dry-firing-7-39792.mp3" id="4_6dnye"]
+[ext_resource type="AudioStream" uid="uid://dc0f2wlw8djrx" path="res://assets/assorted sounds/cannon-fire-161072.mp3" id="5_hgy47"]
+[ext_resource type="AudioStream" uid="uid://ce0qtxcwr73n5" path="res://assets/Deadly Kombat Sounds Free/santa bounce/body_hit_finisher_23.wav" id="7_kuqnd"]
+[ext_resource type="AudioStream" uid="uid://ceanwja4va4ec" path="res://assets/Deadly Kombat Sounds Free/santa bounce/body_hit_finisher_27.wav" id="8_aqwoo"]
+[ext_resource type="AudioStream" uid="uid://dgjbiv5lr848i" path="res://assets/Deadly Kombat Sounds Free/santa bounce/face_hit_Large_29.wav" id="9_gme15"]
+[ext_resource type="AudioStream" uid="uid://b3j8y4nu2jdw1" path="res://assets/Deadly Kombat Sounds Free/santa bounce/body_hit_large_32.wav" id="10_ha40h"]
+[ext_resource type="AudioStream" uid="uid://c8167vs28v4e5" path="res://assets/Deadly Kombat Sounds Free/santa bounce/body_hit_large_76.wav" id="11_6axrm"]
+[ext_resource type="AudioStream" uid="uid://gu6evos3m6t5" path="res://assets/Deadly Kombat Sounds Free/santa bounce/body_hit_small_23.wav" id="12_706ax"]
+[ext_resource type="AudioStream" uid="uid://b0imr5hy3olxc" path="res://assets/Deadly Kombat Sounds Free/santa bounce/bone_breaking_53.wav" id="13_or6mn"]
+[ext_resource type="AudioStream" uid="uid://bjefgfxyb01mr" path="res://assets/Deadly Kombat Sounds Free/santa bounce/face_hit_finisher_19.wav" id="14_n202j"]
+[ext_resource type="AudioStream" uid="uid://fkif58rbl46s" path="res://assets/Deadly Kombat Sounds Free/santa bounce/face_hit_finisher_40.wav" id="15_o26fd"]
+[ext_resource type="AudioStream" uid="uid://prwrw48kddfy" path="res://assets/Deadly Kombat Sounds Free/santa bounce/face_hit_finisher_73.wav" id="16_ve86m"]
+[ext_resource type="AudioStream" uid="uid://x8o2aoditdbn" path="res://assets/Deadly Kombat Sounds Free/santa bounce/face_hit_Large_20.wav" id="17_b4k3q"]
+[ext_resource type="PackedScene" uid="uid://xetgxl3byinq" path="res://scenes/Cannon.tscn" id="18_lspi7"]
+[ext_resource type="Script" path="res://scripts/Floor.gd" id="21_tdtfx"]
+[ext_resource type="PackedScene" uid="uid://b4q2x3jtkrvtf" path="res://scenes/PowerMeter.tscn" id="23_0vbp8"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_d42wo"]
+friction = 0.26
+bounce = 0.8
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8tdpr"]
+radius = 56.2228
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kte0o"]
+streams_count = 11
+stream_0/stream = ExtResource("7_kuqnd")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("8_aqwoo")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("10_ha40h")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("11_6axrm")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("12_706ax")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("13_or6mn")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("14_n202j")
+stream_6/weight = 1.0
+stream_7/stream = ExtResource("15_o26fd")
+stream_7/weight = 1.0
+stream_8/stream = ExtResource("16_ve86m")
+stream_8/weight = 1.0
+stream_9/stream = ExtResource("17_b4k3q")
+stream_9/weight = 1.0
+stream_10/stream = ExtResource("9_gme15")
+stream_10/weight = 1.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_inf05"]
+normal = Vector2(0, 1)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wlqrb"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1colw"]
+resource_local_to_scene = true
+
+[node name="Game" type="Node2D"]
+position = Vector2(225, 158)
+script = ExtResource("1_5ngek")
+weapons = Array[Resource("res://scripts/Weapon.gd")]([ExtResource("2_7ylki")])
+
+[node name="PistolSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_cni2f")
+volume_db = -3.611
+max_polyphony = 2
+
+[node name="DryFire" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_6dnye")
+volume_db = 5.056
+
+[node name="CannonSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_hgy47")
+
+[node name="PowerMeter" parent="." instance=ExtResource("23_0vbp8")]
+offset_left = 184.0
+offset_top = 253.0
+offset_right = 268.0
+offset_bottom = 453.0
+
+[node name="Santa" type="RigidBody2D" parent="."]
+unique_name_in_owner = true
+modulate = Color(0.705882, 0.00392157, 0, 1)
+position = Vector2(740, 345)
+rotation = -0.0349066
+mass = 200.0
+physics_material_override = SubResource("PhysicsMaterial_d42wo")
+continuous_cd = 2
+freeze = true
+linear_damp = 0.01
+script = ExtResource("3_taptd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Santa"]
+texture = ExtResource("2_pbel4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Santa"]
+shape = SubResource("CircleShape2D_8tdpr")
+debug_color = Color(0.992157, 0.0745098, 0, 0.419608)
+
+[node name="BounceSound" type="AudioStreamPlayer" parent="Santa"]
+stream = SubResource("AudioStreamRandomizer_kte0o")
+max_polyphony = 2
+
+[node name="Cannon" parent="." instance=ExtResource("18_lspi7")]
+unique_name_in_owner = true
+position = Vector2(380, 359)
+rotation = -0.0349066
+
+[node name="CannonMouth" type="RemoteTransform2D" parent="Cannon"]
+unique_name_in_owner = true
+position = Vector2(360.269, -1.42761)
+remote_path = NodePath("../../Santa")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(340, 167)
+limit_left = -1316134912
+limit_top = -1316134912
+limit_right = 1316134912
+limit_bottom = 1316134912
+script = ExtResource("2_u603l")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(225, 158)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(336, 596)
+
+[node name="Sky-layer" type="Sprite2D" parent="ParallaxBackground/Sky"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_r76ha")
+centered = false
+metadata/_edit_group_ = true
+
+[node name="Sky-layer2" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer"]
+position = Vector2(112, 0)
+texture = ExtResource("1_r76ha")
+centered = false
+
+[node name="Sky-layer2" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer/Sky-layer2"]
+position = Vector2(112, 0)
+texture = ExtResource("1_r76ha")
+centered = false
+
+[node name="Sky-layer2" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer/Sky-layer2/Sky-layer2"]
+position = Vector2(112, 0)
+texture = ExtResource("1_r76ha")
+centered = false
+
+[node name="Sky-layer" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer"]
+position = Vector2(448, 273.667)
+scale = Vector2(-1, 1)
+texture = ExtResource("1_r76ha")
+centered = false
+metadata/_edit_group_ = true
+
+[node name="Sky-layer2" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer/Sky-layer"]
+position = Vector2(112, 0)
+texture = ExtResource("1_r76ha")
+centered = false
+
+[node name="Sky-layer2" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer/Sky-layer/Sky-layer2"]
+position = Vector2(112, 0)
+texture = ExtResource("1_r76ha")
+centered = false
+
+[node name="Sky-layer2" type="Sprite2D" parent="ParallaxBackground/Sky/Sky-layer/Sky-layer/Sky-layer2/Sky-layer2"]
+position = Vector2(112, 0)
+texture = ExtResource("1_r76ha")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(552, 156)
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Buildings-layer" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_1lsas")
+centered = false
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-264, 353)
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("WorldBoundaryShape2D_inf05")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-176, 434)
+physics_material_override = SubResource("PhysicsMaterial_wlqrb")
+script = ExtResource("21_tdtfx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("WorldBoundaryShape2D_1colw")
+one_way_collision = true
+one_way_collision_margin = 128.0
+
+[connection signal="landed" from="Santa" to="." method="_on_santa_landed"]
+[connection signal="shot" from="Santa" to="." method="_on_santa_shot"]
+[connection signal="sleeping_state_changed" from="Santa" to="Santa" method="_on_sleeping_state_changed"]
+[connection signal="power_level_changed" from="Cannon" to="PowerMeter" method="set_power_level"]

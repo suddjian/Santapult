@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byx6vhwy8bh3n"
+path="res://.godot/imported/Berool - The Dark Side Of Santa Claus - 03 The Dark Side Of Santa Claus (30 Sec Edit).mp3-6e4948c966a0e8fde3f4aaab11838cee.mp3str"
+
+[deps]
+
+source_file="res://assets/Berool - The Dark Side Of Santa Claus/Berool - The Dark Side Of Santa Claus - 03 The Dark Side Of Santa Claus (30 Sec Edit).mp3"
+dest_files=["res://.godot/imported/Berool - The Dark Side Of Santa Claus - 03 The Dark Side Of Santa Claus (30 Sec Edit).mp3-6e4948c966a0e8fde3f4aaab11838cee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

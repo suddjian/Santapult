@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://de5hyw00oqi2k"
+path="res://.godot/imported/gun-dry-firing-7-39792.mp3-d6bd074f096c7a3658dd238e622b0e4d.mp3str"
+
+[deps]
+
+source_file="res://assets/assorted sounds/gun-dry-firing-7-39792.mp3"
+dest_files=["res://.godot/imported/gun-dry-firing-7-39792.mp3-d6bd074f096c7a3658dd238e622b0e4d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

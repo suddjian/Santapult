@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bobiootb2bv85"]
+
+[ext_resource type="Script" path="res://scripts/House.gd" id="1_5mt5k"]
+[ext_resource type="Texture2D" uid="uid://by3akxap6saud" path="res://assets/drawings/house.png" id="1_6kcpn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g0tgl"]
+radius = 17.0
+height = 102.0
+
+[node name="House" type="Node2D"]
+script = ExtResource("1_5mt5k")
+
+[node name="House" type="Sprite2D" parent="."]
+position = Vector2(396, -363)
+scale = Vector2(0.321313, 0.321313)
+texture = ExtResource("1_6kcpn")
+
+[node name="Chimney" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(71, -592)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chimney"]
+position = Vector2(9, 28)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_g0tgl")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-10, 22)
+polygon = PackedVector2Array(9, -569, 6, -329, -30, -302, -36, 492, 840, 346, 865, -525, 599, -662, 221, -433, 162, -433, 166, -569)
+
+[connection signal="body_entered" from="Chimney" to="." method="_on_chimney_body_entered"]

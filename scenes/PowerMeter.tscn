@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4q2x3jtkrvtf"]
+
+[ext_resource type="Theme" uid="uid://4rvhcv1yh0s0" path="res://ui_theme.tres" id="1_2hiu2"]
+[ext_resource type="Script" path="res://scripts/PowerMeter.gd" id="2_7bwc0"]
+
+[sub_resource type="Gradient" id="Gradient_8citb"]
+interpolation_mode = 2
+interpolation_color_space = 2
+colors = PackedColorArray(0, 1, 0.133333, 1, 1, 0, 0.215686, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_23q7n"]
+font_size = 24
+font_color = Color(1, 0, 0, 1)
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 0.301961)
+
+[node name="PowerMeter" type="HBoxContainer"]
+offset_right = 84.0
+offset_bottom = 200.0
+theme = ExtResource("1_2hiu2")
+theme_override_constants/separation = 10
+script = ExtResource("2_7bwc0")
+colors = SubResource("Gradient_8citb")
+
+[node name="Wrapper" type="Control" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(16, 200)
+layout_mode = 2
+
+[node name="Background" type="ColorRect" parent="Wrapper"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.215686, 0.192157, 0.231373, 1)
+
+[node name="ColorBox" type="ColorRect" parent="Wrapper"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Power"
+label_settings = SubResource("LabelSettings_23q7n")

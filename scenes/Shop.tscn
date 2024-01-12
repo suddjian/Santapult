@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://cuue0wgnhuuer"]
+
+[ext_resource type="Script" path="res://scripts/shop.gd" id="1_vf0h4"]
+[ext_resource type="Texture2D" uid="uid://d6dbu6btcii" path="res://assets/drawings/shop.png" id="2_pnlc2"]
+[ext_resource type="Theme" uid="uid://4rvhcv1yh0s0" path="res://ui_theme.tres" id="3_qndcl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_npnkp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j756r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_43nsc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cvur8"]
+
+[node name="Shop" type="Node2D"]
+script = ExtResource("1_vf0h4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1170.0
+offset_bottom = 667.0
+color = Color(0.937255, 0.94902, 0.94902, 1)
+
+[node name="Shop" type="Sprite2D" parent="."]
+modulate = Color(0.964706, 0.94902, 0.929412, 1)
+position = Vector2(-54, -49)
+scale = Vector2(0.285962, 0.261905)
+texture = ExtResource("2_pnlc2")
+centered = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1078.0
+offset_top = -71.0
+offset_right = -959.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("3_qndcl")
+theme_override_colors/font_color = Color(0.203922, 0.203922, 0.203922, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_npnkp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_j756r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43nsc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cvur8")
+text = "← Back"
+flat = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_back_pressed"]

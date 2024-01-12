@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://oj3xytdhoesb"
+path="res://.godot/imported/Berool - The Dark Side Of Santa Claus - 01 The Dark Side Of Santa Claus.mp3-f2db6158e146931b7fe8151e7894e62e.mp3str"
+
+[deps]
+
+source_file="res://assets/Berool - The Dark Side Of Santa Claus/Berool - The Dark Side Of Santa Claus - 01 The Dark Side Of Santa Claus.mp3"
+dest_files=["res://.godot/imported/Berool - The Dark Side Of Santa Claus - 01 The Dark Side Of Santa Claus.mp3-f2db6158e146931b7fe8151e7894e62e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=100.0
+beat_count=200
+bar_beats=4
